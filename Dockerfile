@@ -18,3 +18,9 @@ EXPOSE 8080
 
 # Run this command (starts the app) when the container starts
 CMD cd /src && node ./app.js
+
+LABEL Target="Dev" \
+      owner="leandro.ueki@zurich.com" \
+      Department="ITSS-Architecture" \
+      DataClassification="Internal" \
+      PlanningIT="12345"
