@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: leandrouekipipelinessampleappdev 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: leandrouekipipelinessampleappdev
+  template:
+    metadata:
+      labels:
+        app: leandrouekipipelinessampleappdev 
+    spec:
+      containers:
+        - name: leandrouekipipelinessampleappdev 
+          image: uekiacr.azurecr.io/leandrouekipipelinessampleappdev
+          ports:
+          - containerPort: 8080
