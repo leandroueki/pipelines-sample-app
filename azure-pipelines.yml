@@ -44,7 +44,7 @@ stages:
       inputs:
         scanType: 'images'
         twistlockService: 'PCC-Image-Scan'
-        artifact: 'image'
+        artifact: '$(containerRegistry)/$(imageRepository):$(tag)'
         
     - upload: manifests
       artifact: manifests
