@@ -9,7 +9,7 @@ RUN yum -y install nodejs npm; yum clean all
 COPY . /src
 
 # Install app and dependencies into /src in container
-RUN cd /src; npm install 3.2.2
+RUN cd /src; npm install
 
 # Run this command (starts the app) when the container starts
 CMD cd /src && node ./app.js
