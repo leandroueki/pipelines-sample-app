@@ -14,6 +14,9 @@ RUN cd /src; npm install
 # Run this command (starts the app) when the container starts
 CMD cd /src && node ./app.js
 
+# Document the port the app listens on
+EXPOSE 8080
+
 LABEL Target="Dev" \
       owner="leandro.ueki@zurich.com" \
       Department="ITSS-Architecture" \
