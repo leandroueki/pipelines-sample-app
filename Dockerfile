@@ -4,7 +4,7 @@ FROM centos:latest
 RUN yum -y update; yum clean all
 RUN yum -y install epel-release; yum clean all
 RUN yum -y install nodejs npm; yum clean all
-RUN yum -y purge curl
+RUN yum -y remove curl
 
 # Copy source code to /src in container
 COPY . /src
