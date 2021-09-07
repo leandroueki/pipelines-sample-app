@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM centos:latest
 
 # Install Node etc...
 RUN yum -y update; yum clean all
