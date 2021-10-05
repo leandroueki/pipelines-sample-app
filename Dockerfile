@@ -18,7 +18,7 @@ CMD cd /src && node ./app.js
 EXPOSE 8080
 
 LABEL Target="Dev" \
-      owner="leandro.ueki@zurich.com" \
-      Department="ITSS-Architecture" \
+      owner="rob.wheeler@uk.zurich.com" \
+      Department="ITSS-SecEng" \
       DataClassification="Internal" \
       PlanningIT="12345"
